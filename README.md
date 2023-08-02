@@ -14,7 +14,7 @@ fc-cache -fv
 ### Install coc.nvim plugins:
 ```
 cp .vimrc ~/.vimrc
-vim -c "CocInstall coc-jedi coc-html coc-css coc-sh coc-go coc-tabnine"
+vim -c "CocInstall coc-jedi coc-html coc-css coc-sh coc-go coc-tabnine coc-word"
 ```
 
 ## Konsole (tested with 20.12.3)
