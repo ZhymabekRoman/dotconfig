@@ -50,6 +50,7 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
 endif
 
 call plug#begin()
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'KeitaNakamura/neodark.vim'
 Plug 'Exafunction/codeium.vim'
 Plug 'vim-airline/vim-airline'  " status and tabline
@@ -157,8 +158,11 @@ augroup illuminate_augroup
     autocmd!
     autocmd VimEnter * hi illuminatedWord ctermfg=74 cterm=underline
 augroup END
-let g:Illuminate_delay = 200
+let g:Illuminate_delay = 250
 let g:Illuminate_ftblacklist = ['nerdtree']
+
+let g:NERDTreeWinPos = "right"
+let g:nerdtree_tabs_open_on_console_startup=1
 
 " loading the plugin
 let g:webdevicons_enable = 1
@@ -337,6 +341,3 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " Doesn't allow use Ctrl-Z (some bugs in fish)
 map <C-z> <Nop>
-
-" Disable quote concealing in JSON files
-let g:vim_json_conceal=0
