@@ -51,6 +51,7 @@ endif
 
 call plug#begin()
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'wakatime/vim-wakatime'
 Plug 'KeitaNakamura/neodark.vim'
 Plug 'Exafunction/codeium.vim'
 Plug 'vim-airline/vim-airline'  " status and tabline
@@ -63,6 +64,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'godlygeek/tabular'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mhinz/vim-startify'
+Plug 'simeji/winresizer'
 Plug 'Yggdroot/indentLine'
 Plug 'dense-analysis/ale'
 call plug#end()            " required
@@ -341,3 +343,11 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " Doesn't allow use Ctrl-Z (some bugs in fish)
 map <C-z> <Nop>
+
+" copy to buffer
+nmap <F7> :w! ~/.vimbuffer<CR>
+vmap <F7> :.w! ~/.vimbuffer<CR>
+" paste from buffer
+nmap <F8> :r ~/.vimbuffer<CR>
+nmap <F8> :r ~/.vimbuffer<CR>
+
