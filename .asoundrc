@@ -1,0 +1,8 @@
+pcm.!default {
+   type plug
+   slave.pcm hw
+  hint {
+    show on
+    description "HW Pulseaudio"
+  }
+}
