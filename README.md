@@ -2,16 +2,9 @@
 
 # Installation:
 ## Font
-### Agave Nerd Font (v3.0.2):
-#### In Arch Linux:
+- https://dev.to/moniquelive/using-nerd-font-symbols-and-emoji-with-any-unpatched-font-in-linux-3kdo
 ```
-sudo pacman -S ttf-agave-nerd
-```
-#### Other distros:
-```
-aria2c "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/Agave.zip"
-mkdir -p ~/.local/share/fonts/
-unzip Agave.zip -d ~/.local/share/fonts/
+sudo pacman -S ttf-jetbrains-mono noto-fonts-emoji ttf-nerd-fonts-symbols 
 fc-cache -fv
 ```
 
