@@ -4,7 +4,7 @@
 ## Font
 - https://dev.to/moniquelive/using-nerd-font-symbols-and-emoji-with-any-unpatched-font-in-linux-3kdo
 ```
-sudo pacman -S ttf-jetbrains-mono noto-fonts-emoji ttf-nerd-fonts-symbols 
+sudo pacman -S ttf-jetbrains-mono-nerd noto-fonts-emoji
 fc-cache -fv
 ```
 

@@ -39,7 +39,7 @@ set whichwrap+=<,>,[,]
 " Не переносить строку
 set nowrap
 " установить tab равным 4 пробелам
-set ts=4
+" set ts=4
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
@@ -51,7 +51,7 @@ endif
 
 call plug#begin()
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'wakatime/vim-wakatime'
+" Plug 'wakatime/vim-wakatime'
 Plug 'KeitaNakamura/neodark.vim'
 Plug 'Exafunction/codeium.vim'
 Plug 'vim-airline/vim-airline'  " status and tabline
@@ -351,3 +351,5 @@ vmap <F7> :.w! ~/.vimbuffer<CR>
 nmap <F8> :r ~/.vimbuffer<CR>
 nmap <F8> :r ~/.vimbuffer<CR>
 
+autocmd BufEnter *.* set conceallevel=0
+" autocmd BufEnter *.tex set concealcursor=n
