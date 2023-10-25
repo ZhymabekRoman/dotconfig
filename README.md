@@ -3,8 +3,9 @@
 # Installation:
 ## Font
 - https://dev.to/moniquelive/using-nerd-font-symbols-and-emoji-with-any-unpatched-font-in-linux-3kdo
+- https://jichu4n.com/posts/how-to-set-default-fonts-and-font-aliases-on-linux/
 ```
-sudo pacman -S ttf-jetbrains-mono-nerd noto-fonts-emoji
+sudo pacman -S ttf-croscore
 fc-cache -fv
 ```
 
