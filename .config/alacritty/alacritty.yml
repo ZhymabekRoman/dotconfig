@@ -1,0 +1,8 @@
+shell:
+  program: /bin/tmux # <- set this to the path of your tmux installation
+  args:
+    - new-session
+    - -A
+    - -D
+    - -s
+    - main
