@@ -61,6 +61,7 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'ryanoasis/vim-devicons'
 Plug 'machakann/vim-highlightedyank'  " report yanked range
 Plug 'Raimondi/delimitMate'
+Plug 'airblade/vim-gitgutter'
 Plug 'godlygeek/tabular'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'mhinz/vim-startify'
