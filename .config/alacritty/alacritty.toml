@@ -18,6 +18,8 @@ style = "Italic"
 family = "AurulentSansM Nerd Font Mono"
 style = "Regular"
 
-[shell]
+[terminal]
+
+[terminal.shell]
 args = ["new-session", "-A", "-D", "-s", "main"]
 program = "/bin/tmux"
